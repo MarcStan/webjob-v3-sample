@@ -9,14 +9,14 @@ using System.Threading.Tasks;
 namespace DotNetCore_WebJob_SdkV3.Jobs
 {
     /// <summary>
-    /// Webjob with custom DI inside the function.
-    /// Services will always be resolved per call (thus singleton and scoped services resolve the same)
+    /// Function with custom DI inside the function.
+    /// Services will always be resolved per function call (singleton and scoped services resolve the same)
     /// </summary>
-    public class TimeTriggeredJobWithCustomDI
+    public class TimeTriggeredFunctionWithCustomDI
     {
         private const string Daily = "0 0 0 * * *";
 
-        [FunctionName("triggered-webjob-with-custom-di-in-function")]
+        [FunctionName("triggered-function-with-custom-di-in-function")]
         public async Task CleanAsync(
             [TimerTrigger(Daily, RunOnStartup = true)] TimerInfo myTimer,
             CancellationToken cancellationToken)
