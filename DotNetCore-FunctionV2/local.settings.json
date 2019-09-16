@@ -1,6 +1,7 @@
 {
     "IsEncrypted": false,
     "Values": {
+        // values for local debugging, Azure will use environment variables as configuration values automatically
         "AzureWebJobsStorage": "UseDevelopmentStorage=true",
         "FUNCTIONS_WORKER_RUNTIME": "dotnet"
     }
