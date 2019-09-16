@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore-WebJob-SdkV3", "DotNetCore-WebJob-SdkV3\DotNetCore-WebJob-SdkV3.csproj", "{D502C34F-0096-4443-97F0-79D402024102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore-FunctionV2", "DotNetCore-FunctionV2\DotNetCore-FunctionV2.csproj", "{738C3782-D0F9-4058-8233-B5B548A9ADD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D502C34F-0096-4443-97F0-79D402024102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D502C34F-0096-4443-97F0-79D402024102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D502C34F-0096-4443-97F0-79D402024102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D502C34F-0096-4443-97F0-79D402024102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{738C3782-D0F9-4058-8233-B5B548A9ADD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{738C3782-D0F9-4058-8233-B5B548A9ADD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{738C3782-D0F9-4058-8233-B5B548A9ADD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{738C3782-D0F9-4058-8233-B5B548A9ADD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ADA96E9-D199-4103-86CE-FF6CD1D359D0}
+	EndGlobalSection
+EndGlobal
