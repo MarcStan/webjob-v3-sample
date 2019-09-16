@@ -1,34 +1,27 @@
-﻿using DotNetCore_WebJob_SdkV3.Services;
-using Microsoft.ApplicationInsights;
+﻿using Microsoft.ApplicationInsights;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.DependencyInjection;
+using SharedLogic.Services;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace DotNetCore_WebJob_SdkV3.Jobs
 {
-    public class TriggeredJob
+    /// <summary>
+    /// Function with custom DI inside the function.
+    /// Services will always be resolved per function (singleton and scoped services resolve the same)
+    /// </summary>
+    public class TimeTriggeredJobWithCustomDI
     {
         private const string Daily = "0 0 0 * * *";
-        private readonly ICleanupService _cleanupService;
 
-        public TriggeredJob(
-            ICleanupService cleanupService)
-        {
-            _cleanupService = cleanupService;
-        }
-
-        [FunctionName("webjob-triggered-cleanup")]
-        public async Task RunAsync(
+        [FunctionName("triggered-webjob-with-custom-di-in-function")]
+        public async Task CleanAsync(
             [TimerTrigger(Daily, RunOnStartup = true)] TimerInfo myTimer,
             CancellationToken cancellationToken)
         {
-            // DI on function level IS possible but requires effort: https://blog.wille-zone.de/post/azure-functions-proper-dependency-injection/
-            // easier options:
-            // 1. Use ConfigureServices of HostBuilder and inject via ctor
-            await _cleanupService.CleanupAsync(cancellationToken);
-            // 2. roll your own in the function
+            // DI on function level IS possible but requires larger effort: https://blog.wille-zone.de/post/azure-functions-proper-dependency-injection/
             var sp = GetServiceProvider();
             await sp.GetRequiredService<ICleanupService>().CleanupAsync(cancellationToken);
         }
@@ -38,6 +31,7 @@ namespace DotNetCore_WebJob_SdkV3.Jobs
             var services = new ServiceCollection();
 
             services.AddTransient<ICleanupService, CleanupService>();
+            // singleton and scoped will be identical because serivce provider is always recreated per function call)
             services.AddSingleton(new TelemetryClient());
 
             return services.BuildServiceProvider();

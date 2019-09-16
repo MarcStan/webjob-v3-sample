@@ -1,9 +1,9 @@
-﻿using DotNetCore_WebJob_SdkV3.Services;
-using Microsoft.ApplicationInsights;
+﻿using Microsoft.ApplicationInsights;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using SharedLogic.Services;
 using System.Threading.Tasks;
 
 namespace DotNetCore_WebJob_SdkV3

@@ -1,7 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 
-namespace DotNetCore_WebJob_SdkV3.Services
+namespace SharedLogic.Services
 {
     public interface ICleanupService
     {
