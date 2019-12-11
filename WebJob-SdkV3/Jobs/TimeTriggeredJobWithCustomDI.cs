@@ -6,7 +6,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace DotNetCore_WebJob_SdkV3.Jobs
+namespace WebJob_SdkV3.Jobs
 {
     /// <summary>
     /// Webjob with custom DI inside the function.

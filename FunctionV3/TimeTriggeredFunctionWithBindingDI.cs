@@ -4,7 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Willezone.Azure.WebJobs.Extensions.DependencyInjection;
 
-namespace DotNetCore_WebJob_SdkV3.Jobs
+namespace WebJob_SdkV3.Jobs
 {
     /// <summary>
     /// Function with DI via function parameter (requires external nuget package and service setup via Startup).

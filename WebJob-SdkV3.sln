@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore-WebJob-SdkV3", "DotNetCore-WebJob-SdkV3\DotNetCore-WebJob-SdkV3.csproj", "{D502C34F-0096-4443-97F0-79D402024102}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJob-SdkV3", "WebJob-SdkV3\WebJob-SdkV3.csproj", "{D502C34F-0096-4443-97F0-79D402024102}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore-FunctionV2", "DotNetCore-FunctionV2\DotNetCore-FunctionV2.csproj", "{738C3782-D0F9-4058-8233-B5B548A9ADD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionV3", "FunctionV3\FunctionV3.csproj", "{738C3782-D0F9-4058-8233-B5B548A9ADD4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLogic", "SharedLogic\SharedLogic.csproj", "{F7835FFB-D407-42F2-8943-90413CBB6787}"
 EndProject

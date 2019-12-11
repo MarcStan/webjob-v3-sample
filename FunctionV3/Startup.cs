@@ -1,4 +1,4 @@
-﻿using DotNetCore_FunctionV2;
+﻿using FunctionV2;
 using Microsoft.ApplicationInsights;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Hosting;
@@ -7,7 +7,7 @@ using SharedLogic.Services;
 using Willezone.Azure.WebJobs.Extensions.DependencyInjection;
 
 [assembly: WebJobsStartup(typeof(Startup))]
-namespace DotNetCore_FunctionV2
+namespace FunctionV2
 {
     internal class Startup : IWebJobsStartup
     {

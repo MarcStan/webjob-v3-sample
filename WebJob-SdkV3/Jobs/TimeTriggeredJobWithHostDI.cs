@@ -3,7 +3,7 @@ using SharedLogic.Services;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace DotNetCore_WebJob_SdkV3.Jobs
+namespace WebJob_SdkV3.Jobs
 {
     /// <summary>
     /// Using ConfigureServices of HostBuilder in Program.cs allows injecting services via ctor of function classes.

@@ -6,7 +6,7 @@ using Microsoft.Extensions.Logging;
 using SharedLogic.Services;
 using System.Threading.Tasks;
 
-namespace DotNetCore_WebJob_SdkV3
+namespace WebJob_SdkV3
 {
     public static class Program
     {
